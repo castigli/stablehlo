@@ -17,6 +17,9 @@ add_mlir_library(StablehloTypeConversion
   PARTIAL_SOURCES_INTENDED
   TypeConversion.cpp
 
+  LINK_COMPONENTS
+  LLVMSupport
+
   LINK_LIBS PUBLIC
   MLIRIR
   MLIRSupport
